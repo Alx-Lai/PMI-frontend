@@ -1,17 +1,37 @@
-.logo-wrap {
+.logo {
   position: fixed;
-  right:0;
-  top: 0;
-  width: 0;
-  height: 0;
+  width: 40vmin;
+  height: auto;
+  right: 25vw;
+  top: -5vh;
+  animation: logo 1s linear;
+  z-index: 2;
 }
-#logo {
-  position: absolute;
-  right: 0vmin;
-  width: 540px;
-  height: 720px;
-  transform: rotate(calc(var(--scroll)*180deg - 180deg));
+@keyframes logo {
+  to{
+    top: -13vh;
+    right: -5vw;
+  }
 }
+
+.tw-wrap{
+  position: fixed;
+  left: 35vw;
+  top: 0vh;
+  width: 60vw;
+  height: 50vh;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,100)),url(./Images/taiwan.png);
+  background-size: 30vw auto;
+  background-repeat: no-repeat;
+  animation: taiwan 1s linear;
+}
+@keyframes taiwan {
+  to{
+    height: 200vh;
+  }
+}
+
+
 
 :root * {
   animation-play-state: paused;
