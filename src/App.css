@@ -36,7 +36,13 @@
   }
 }
 
-
+.menu {
+  position: fixed;
+  right: 0;
+  width: 30vmin;
+  height: auto;
+  z-index: 900;
+}
 
 :root * {
   animation-play-state: paused;
