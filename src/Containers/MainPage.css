@@ -1,0 +1,19 @@
+.bed {
+    position: fixed;
+    left: 10vw;
+  }
+  
+.bed-title1 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+  
+.bed-title2 {
+    margin-top: 15px;
+    font-weight: 500;
+}
+  
+.bed-input {
+    padding: 10px;
+    font-size: medium;
+}

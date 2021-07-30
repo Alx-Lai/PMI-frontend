@@ -51,3 +51,20 @@
   animation-iteration-count: 1;
   animation-fill-mode: both;
 }
+
+h3 {
+  color: #103D65;
+}
+
+h2 {
+  color: #103D65;
+}
+
+input {
+  border: 0;
+  border-radius: 7px;
+}
+
+input:focus {
+  outline-color: #A4C7CA;
+}
