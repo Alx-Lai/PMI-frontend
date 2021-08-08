@@ -1,8 +1,10 @@
 import "./AboutUs.css";
+import logo from "../Images/logo.png"
 
 export default function AboutUs() {
     return (
         <>
+            <img src={logo} alt='logo' id='logo' />
             <h2>,,</h2>
             <p>
                 大家好，我們是PMI防衛隊。

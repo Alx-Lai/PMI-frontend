@@ -14,3 +14,11 @@ h2 {
 #tail {
     text-align: right;
 }
+
+#logo {
+    top: 0;
+    right: 20em;
+    position: fixed;
+    opacity: 20%;
+    width: 40em;
+}
