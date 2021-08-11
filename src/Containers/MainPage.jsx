@@ -23,11 +23,13 @@ const MainPage = () => {
     const handleClickMenu = (e) => {
         let x = Math.round((e.clientX - e.target.offsetLeft) / e.target.clientWidth * 100)
         let y = Math.round((e.clientY - e.target.offsetTop) / e.target.clientHeight * 100)
-        if (x>49 && x<77 && y>25 && y<29) console.log("確診資訊")
-        else if (x>26 && x<54 && y>33 && y<38) console.log("死亡資訊")
-        else if (x>16 && x<45 && y>45 && y<51) console.log("醫療量能")
-        else if (x>24 && x<52 && y>59 && y<64) console.log("疫苗資訊")
-        else if (x>53 && x<81 && y>69 && y<75) console.log("關於我們")
+        if (x>49 && x<88 && y>25 && y<29) console.log("疫情近況")
+        else if (x>16 && x<55 && y>41 && y<45) console.log("醫療量能")
+        else if (x>28 && x<43 && y>64 && y<66) console.log("疫苗分類")
+        else if (x>28 && x<50 && y>=67 && y<=68) console.log("Q & A")
+        else if (x>28 && x<43 && y>=70 && y<=71) console.log("文獻資料")
+        else if (x>52 && x<83 && y>70 && y<75) console.log("關於我們")
+        else if (x>82 && x<98 && y>67 && y<74) console.log("關於我們")
         else setSelect(false)
     }
 
