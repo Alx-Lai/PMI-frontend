@@ -4,7 +4,7 @@ p {
     width: 60%;
 }
 
-h2 {
+.about-us-h2 {
     width: 60%;
     margin: auto;
     margin-top: 30px;
@@ -15,7 +15,7 @@ h2 {
     text-align: right;
 }
 
-#logo {
+#logo-watermark {
     top: 0;
     right: 20em;
     position: fixed;

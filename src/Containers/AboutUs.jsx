@@ -4,8 +4,8 @@ import logo from "../Images/logo.png"
 export default function AboutUs() {
     return (
         <>
-            <img src={logo} alt='logo' id='logo' />
-            <h2>,,</h2>
+            <img src={logo} alt='logo' id='logo-watermark' />
+            <h2 class='about-us-h2'>,,</h2>
             <p>
                 大家好，我們是PMI防衛隊。
             </p>
@@ -24,7 +24,7 @@ export default function AboutUs() {
             <p>
                 期望透過資訊的整合來釐清大眾們的疑問和破除錯誤的資訊，也使大家更能夠迅速的了解最新的疫情資訊。
             </p>
-            <h2 id='tail'>,,</h2>
+            <h2 class='about-us-h2' id='tail'>,,</h2>
         </>
     )
 };
