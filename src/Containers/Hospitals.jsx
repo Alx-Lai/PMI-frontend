@@ -2,7 +2,7 @@ import "./Hospitals.css";
 
 export default function Hospitals() {
     return (
-        <div id='wrap'>
+        <div id='hospital-wrap'>
             <div class='county'>
                 <h3>基隆</h3>
                 <a target="_blank" rel="noreferrer" href='https://www.kln.mohw.gov.tw/?aid=301&page_name=detail&iid=1364&pid=0'>衛生福利部基隆醫院</a>
