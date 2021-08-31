@@ -5,11 +5,9 @@ import MainPage from './Containers/MainPage';
 import Pendamic from './Containers/Pendamic'
 import Hospitals from './Containers/Hospitals'
 import AboutUs from './Containers/AboutUs'
-import logo from './Images/logo.png'
 import menu from './Images/menu.png'
 
 function App() {
-  const [select, setSelect] = useState(false);
   const [scroll, setScroll] = useState(0)
   let offsetStart = 0, offsetEnd = 0;
 
@@ -17,13 +15,6 @@ function App() {
     setScroll((window.pageYOffset - offsetStart) / (document.body.offsetHeight - offsetStart - offsetEnd - window.innerHeight))
     document.documentElement.style.setProperty('--scroll', scroll)
   }, false);
-
-  const handleClick = () => {
-    // if (scroll > 0.95 || window.location.href !== "/") {
-      // console.log(window.location.href)
-      setSelect(true)
-    // }
-  }
 
   const handleClickMenu = (e) => {
     let x = Math.round((e.clientX - e.target.offsetLeft) / e.target.clientWidth * 100)
@@ -35,16 +26,12 @@ function App() {
     else if (x > 28 && x < 43 && y >= 70 && y <= 71) console.log("文獻資料")
     else if (x > 52 && x < 83 && y > 70 && y < 75) window.location.href = "aboutus"
     else if (x > 82 && x < 98 && y > 67 && y < 74) window.location.href = "aboutus"
-    else setSelect(false)
+    else window.location.href = "/"
   }
 
   return (
     <div className="App">
-      {select ?
-        <img src={menu} alt='menu' className='menu' onClick={handleClickMenu} />
-        :
-        <img src={logo} alt='logo' className='logo' onClick={handleClick} />
-      }
+      <img src={menu} alt='menu' className='menu' onClick={handleClickMenu} />
       <Switch>
         <Route path='/pendamic' component={Pendamic} />
         <Route path='/hospitals' component={Hospitals} />

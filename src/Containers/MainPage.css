@@ -17,3 +17,54 @@
     padding: 10px;
     font-size: medium;
 }
+
+.logo {
+    position: fixed;
+    width: 40vmin;
+    height: auto;
+    right: 25vw;
+    top: -5vh;
+    animation: logo 1s linear;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: 2;
+  }
+
+  @keyframes logo {
+    to{
+      top: -5vh;
+      right: 0vw;
+      width: 20vmin;
+      height: auto;
+    }
+  }
+  
+  .logo_hover :hover{
+    box-shadow: 3px;
+  }
+
+  #taiwan {
+    display: block;
+    position: fixed;
+    height: 110%;
+    right: 30%;
+    opacity: 5%;
+  }
+  
+  @keyframes taiwan {
+    0% {
+      opacity: 5%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    #taiwan {
+      animation-name: taiwan;
+      animation-duration: 3s;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
