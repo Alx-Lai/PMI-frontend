@@ -1,0 +1,12 @@
+.menu {
+    position: fixed;
+    right: 0;
+    width: 45vmin;
+    height: auto;
+    z-index: 900;
+    cursor: pointer;
+}
+  
+.mainpage .menu {
+    width: 60px;
+}

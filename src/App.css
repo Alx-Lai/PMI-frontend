@@ -15,15 +15,6 @@
   }
 } */
 
-.menu {
-  position: fixed;
-  right: 0;
-  width: 45vmin;
-  height: auto;
-  z-index: 900;
-  cursor: pointer;
-}
-
 /* :root * {
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
