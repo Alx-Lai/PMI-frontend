@@ -1,9 +1,11 @@
 import "./AboutUs.css";
 import logo from "../Images/logo.png"
+import Menu from './Menu'
 
 export default function AboutUs() {
     return (
         <>
+            <Menu />
             <img src={logo} alt='logo' id='logo-watermark' />
             <h2 class='about-us-h2'>,,</h2>
             <p>
